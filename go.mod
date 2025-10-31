@@ -1,0 +1,3 @@
+module femBasics
+
+go 1.25.3
