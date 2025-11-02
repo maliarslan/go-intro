@@ -114,8 +114,12 @@ func main() {
 	fmt.Printf("New player joined! Welcome %v\n", player.Name)
 	fmt.Printf("Players inventory: %+v\n", player.Inventory)
 
+	fmt.Println("Pick up Liandy")
 	player.PickUpItem(liandry)
+	fmt.Println("Pick up Mana Potion")
 	player.PickUpItem(mp)
+	fmt.Println("Drop Rylai")
 	player.DropItem(rylai)
+	fmt.Println("Use Health Potion")
 	player.UseItem(hp)
 }
