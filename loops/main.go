@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"reflect"
 	"slices"
 )
 
@@ -17,6 +18,14 @@ func main() {
 	// }
 
 	// slice = flexible, dynamic size arrays
+	// can be also derived from an array
+	pets := [2]string{
+		"dog",
+		"cat",
+	}
+	zoo := pets[:] // this is like actually slicing an array like [from:to], [:] means all tho
+	fmt.Println(reflect.TypeOf(pets))
+	fmt.Println(reflect.TypeOf(zoo))
 	animals := []string{
 		"dog", // added to try slices.Delete
 		"dog",
@@ -52,5 +61,15 @@ func main() {
 	for i < 5 {
 		fmt.Println(i)
 		i++
+	}
+
+	// this can go infinite but better to brake
+	// like while(true) {...}
+	for {
+		fmt.Println(i)
+		i++
+		if i == 10 {
+			break
+		}
 	}
 }
