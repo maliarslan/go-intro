@@ -1,0 +1,8 @@
+- Create the following RP game:
+    - Create a player struct (Name and Inventory)
+        - Inventory is a slice of item
+    - Create an item struct (Name and Type)
+    - Methods
+        - PickUpItem: Adds an item to a players inventory
+        - DropItem: Removes an item from the inventory by name
+        - UseItem Depending on the item - it will print different things
