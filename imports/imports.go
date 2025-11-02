@@ -1,5 +1,7 @@
 package imports
 
+// package name is diff because main cannot export but only import
+
 import "fmt"
 
 // go makes a field/function public by checking the first char

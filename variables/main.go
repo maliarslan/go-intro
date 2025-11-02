@@ -12,6 +12,11 @@ func main() {
 
 	// go has a concept of zero value - kinda default initial value?
 	// string = "", bool = false, int = 0, float = 0
+	// they can be represented in printf like below
+	// string: %s
+	// integer: %d
+	// boolean: %t
+	// float: %f
 	var myInitialString string
 	var myInitialInt int
 	var myInitialFloat float32
